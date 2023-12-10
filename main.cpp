@@ -38,8 +38,8 @@ int main()
             smallestNum = b;
     }
 
-    // int largestNum = max(a, max(b, c))
-    // int smallestNum = min(a, min(b, c))
+    // largestNum = max(a, max(b, c));
+    // smallestNum = min(a, min(b, c));
 
     cout << "The largest value is " << largestNum << endl;
     cout << "The smallest value is " << smallestNum << endl;

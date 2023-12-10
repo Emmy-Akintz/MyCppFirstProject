@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int chidera ()
 {
     int a, b, c, temp, temp2;
     cout << "Input your first value" <<endl;
