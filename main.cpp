@@ -45,3 +45,15 @@ int main()
     cout << "The smallest value is " << smallestNum << endl;
     return 0;
 }
+
+// #include <iostream>
+
+// using namespace std;
+
+// int main () {
+//     int a = 5;
+//     int b = 6;
+//     int c = 7;
+
+//     printf("Your numbers are %d, %d and %d", a, b, c);
+// }
