@@ -1,3 +1,5 @@
+// ---------------------------------OUTPUT LARGEST AND SMALLEST NUMBER---------------------------------
+
 // #include <iostream>
 
 // using namespace std;
@@ -46,6 +48,8 @@
 //     return 0;
 // }
 
+// ---------------------------------OUTPUT MULTIPLE VARIABLES WITH PRINTF------------------------
+
 // #include <iostream>
 
 // using namespace std;
@@ -57,6 +61,8 @@
 
 //     printf("Your numbers are %d, %d and %d", a, b, c);
 // }
+
+// -------------------------------------POWER FUNCTION--------------------------------------
 
 // #include <iostream>
 
@@ -91,6 +97,8 @@
 //     return result;
 // }
 
+// ---------------------------------HYPOTENUSE FUNCTION----------------------------------------
+
 // #include <iostream>
 // #include <cmath> // Use cmath instead of math.h for C++
 
@@ -118,6 +126,8 @@
 //     double result = sqrt((b * b) + (c * c));
 //     return result;
 // }
+
+// -----------------------------------ABSOLUTE FUNCTION---------------------------------------
 
 // #include <iostream>
 // #include <cmath> // Use cmath for math functions
@@ -149,6 +159,8 @@
 //     return static_cast<int>(result);
 // }
 
+// -----------------------------------IFLYQUEEN CLASS------------------------------------------
+
 // #include <iostream>
 
 // using namespace std;
@@ -169,3 +181,32 @@
 
 //     return 0;
 // }
+
+// ----------------------------------CLASS AVERAGE------------------------------------
+
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+int main () {
+    int grade, gradeCounter, total, average, studentCount;
+
+    cout << "Enter number of students: ";
+    cin >> studentCount;
+
+    total = 0;
+
+    for (gradeCounter = 0; gradeCounter < studentCount; gradeCounter++) {
+        cout << "Enter grade: ";
+        cin >> grade;
+
+        total += grade;
+    }
+
+    average = total / studentCount;
+    cout << "Class average score is " << average << "." << endl;
+
+    return 0;
+}
