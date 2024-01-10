@@ -168,7 +168,7 @@
 // int main () {
 //     // LOOPS
 //     // initial statement
-//     // final statement
+//     // repetition/final/continuity statement
 //     // increment statement
 //     for (int i = 0; i < 10; i++)
 
