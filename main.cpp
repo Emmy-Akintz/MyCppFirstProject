@@ -88,7 +88,7 @@
 
 // int power(int a, int b) {
 //     if (b == 0) return 1; // Any number to the power of 0 is 1
-    
+
 //     int result = 1;
 //     for (int i = 1; i <= b; i++) {
 //         result *= a;
@@ -107,7 +107,7 @@
 // double hypotenuse(double b, double c);
 
 // int main() {
-    // double b, c, result;
+// double b, c, result;
 
 //     cout << "Enter the value for one side of your triangle: ";
 //     cin >> b;
@@ -161,52 +161,67 @@
 
 // -----------------------------------IFLYQUEEN CLASS------------------------------------------
 
-// #include <iostream>
+#include <iostream>
 
-// using namespace std;
+using namespace std;
 
-// int main () {
-//     // LOOPS
-//     // initial statement
-//     // repetition/final/continuity statement
-//     // increment statement
-//     for (int i = 0; i < 10; i++)
+int main()
+{
+    // LOOPS
+    // initial statement
+    // repetition/final/continuity statement
+    // increment statement
 
-//     // FOR LOOP
+    // FOR LOOP
+    for (int ify = 0; ify < 10; ify++)
+    {
+        cout << "\nhemjkb";
+    }
 
+    // WHILE LOOP
+    int i2 = 0;
+    while (i2 < 10)
+    {
+        cout << "\nshe's a good girl I guess";
+        i2++;
+    }
 
-//     // WHILE LOOP
+    // DO WHILE LOOP
+    // int IFLYQUEEN = 0;
+    // do
+    // {
+    //     cout << "\nshe's a good girl I guess";
+    //     IFLYQUEEN++;
+    // } while (IFLYQUEEN < 10);
 
-//     // DO WHILE LOOP
-
-//     return 0;
-// }
+    // return 0;
+}
 
 // ----------------------------------CLASS AVERAGE------------------------------------
 
-#include <iostream>
+// #include <iostream>
 
-using std::cout;
-using std::cin;
-using std::endl;
+// using std::cout;
+// using std::cin;
+// using std::endl;
 
-int main () {
-    int grade, gradeCounter, total, average, studentCount;
+// int main () {
+//     int grade, gradeCounter, total, average, studentCount;
 
-    cout << "Enter number of students: ";
-    cin >> studentCount;
+//     cout << "Enter number of students: ";
+//     cin >> studentCount;
 
-    total = 0;
+//     total = 0;
 
-    for (gradeCounter = 0; gradeCounter < studentCount; gradeCounter++) {
-        cout << "Enter grade: ";
-        cin >> grade;
+//     for (gradeCounter = 0; gradeCounter < studentCount; gradeCounter++) {
+//         cout << "Enter grade: ";
+//         cin >> grade;
 
-        total += grade;
-    }
+//         total += grade;
+//     }
 
-    average = total / studentCount;
-    cout << "Class average score is " << average << "." << endl;
+//     average = total / studentCount;
+//     cout << "Class average score is " << average << "." << endl;
 
-    return 0;
-}
+//     return 0;
+// }
