@@ -175,26 +175,26 @@ int main()
     // FOR LOOP
     for (int ify = 0; ify < 10; ify++)
     {
-        cout << "\nhemjkb";
+        cout << "\ninitial " << ify;
     }
 
     // WHILE LOOP
     int i2 = 0;
     while (i2 < 10)
     {
-        cout << "\nshe's a good girl I guess";
+        cout << "\nshe's a good girl I guess " << i2;
         i2++;
     }
 
     // DO WHILE LOOP
-    // int IFLYQUEEN = 0;
-    // do
-    // {
-    //     cout << "\nshe's a good girl I guess";
-    //     IFLYQUEEN++;
-    // } while (IFLYQUEEN < 10);
+    int IFLYQUEEN = 1;
+    do
+    {
+        cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
+        // IFLYQUEEN++;
+    } while (++IFLYQUEEN <= 10);
 
-    // return 0;
+    return 0;
 }
 
 // ----------------------------------CLASS AVERAGE------------------------------------
