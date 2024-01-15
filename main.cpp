@@ -161,41 +161,41 @@
 
 // -----------------------------------IFLYQUEEN CLASS------------------------------------------
 
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-int main()
-{
-    // LOOPS
-    // initial statement
-    // repetition/final/continuity statement
-    // increment statement
+// int main()
+// {
+//     // LOOPS
+//     // initial statement
+//     // repetition/final/continuity statement
+//     // increment statement
 
-    // FOR LOOP
-    for (int ify = 0; ify < 10; ify++)
-    {
-        cout << "\ninitial " << ify;
-    }
+//     // FOR LOOP
+//     for (int ify = 0; ify < 10; ify++)
+//     {
+//         cout << "\ninitial " << ify;
+//     }
 
-    // WHILE LOOP
-    int i2 = 0;
-    while (i2 < 10)
-    {
-        cout << "\nshe's a good girl I guess " << i2;
-        i2++;
-    }
+//     // WHILE LOOP
+//     int i2 = 0;
+//     while (i2 < 10)
+//     {
+//         cout << "\nshe's a good girl I guess " << i2;
+//         i2++;
+//     }
 
-    // DO WHILE LOOP
-    int IFLYQUEEN = 1;
-    do
-    {
-        cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
-        // IFLYQUEEN++;
-    } while (++IFLYQUEEN <= 10);
+//     // DO WHILE LOOP
+//     int IFLYQUEEN = 1;
+//     do
+//     {
+//         cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
+//         // IFLYQUEEN++;
+//     } while (++IFLYQUEEN <= 10);
 
-    return 0;
-}
+//     return 0;
+// }
 
 // ----------------------------------CLASS AVERAGE------------------------------------
 
@@ -225,3 +225,88 @@ int main()
 
 //     return 0;
 // }
+
+// -------------------------------ONE DIMENSIONAL ARRAY--------------------------------------
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     int array[5] = { 1,
+//                      7,
+//                      9,
+//                      4,
+//                      5 };
+
+//     for (int i = 0; i < 5; i++)
+//     {
+//         cout << array[i] << " ";
+//     }
+//     return 0;
+// }
+
+// -------------------------TWO DIMENSIONAL ARRAY--------------------------------
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     int sport[3][3] = {
+//         {3, 4, 4},
+//         {2, 3, 6}};
+
+//     cout << sport[0][1];
+
+//     return 0;
+// }
+
+// #include <iostream>
+
+// using namespace std;
+
+// int main() {
+//     int array[4][2] = {
+//         {5, 2},
+//         {4, 7},
+//         {6, 9},
+//         {8, 3},
+//     };
+
+//     for (int i = 0; i < 4; i++) {
+//         cout << array[i][1];
+//     }
+
+//     return 0;
+// }
+
+// ------------------------------MULTI DIMENSIONAL ARRAY------------------------------
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string letters[3][2][2] = {
+        {{"A", "B"},
+         {"C", "D"}},
+        {{"E", "F"},
+         {"G", "H"}},
+        {{"I", "J"},
+         {"K", "L"}}};
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            for (int k = 0; k < 2; k++)
+            {
+                cout << letters[i][j][k] << "\n";
+                // cout << i << j << k;
+            }
+        }
+    }
+
+    return 0;
+}
