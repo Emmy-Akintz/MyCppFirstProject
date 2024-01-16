@@ -160,7 +160,6 @@
 // }
 
 // -----------------------------------IFLYQUEEN CLASS------------------------------------------
-
 // #include <iostream>
 
 // using namespace std;
@@ -168,9 +167,9 @@
 // int main()
 // {
 //     // LOOPS
-//     // initial statement
-//     // repetition/final/continuity statement
-//     // increment statement
+//     // initialization statement
+//     // loopContinuation statement
+//     // increment/decrement statement
 
 //     // FOR LOOP
 //     for (int ify = 0; ify < 10; ify++)
@@ -192,7 +191,7 @@
 //     {
 //         cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
 //         // IFLYQUEEN++;
-//     } while (++IFLYQUEEN <= 10);
+//     } while (IFLYQUEEN++ <= 10);
 
 //     return 0;
 // }
@@ -310,36 +309,59 @@
 // }
 
 // ------------------------------------------CALCULATING COMPOUND INTEREST----------------------------
+// #include <iostream>
+
+// using std::cin;
+// using std::cout;
+// using std::endl;
+
+// #include <iomanip>
+
+// using std::setiosflags;
+// using std::setprecision;
+// using std::setw;
+
+// #include <cmath>
+
+// int main()
+// {
+//     double amount,          // amount on deposit
+//         principal = 1000.0, // starting principal
+//         rate = .05;         // interest rate
+
+//     cout << "Year " << setw(21) << "Amount on deposit" << endl;
+
+//     // set floating-point number format
+//     cout << setiosflags(std::ios::fixed | std::ios::showpoint) << setprecision(2);
+
+//     for (int year = 1; year <= 10; year++)
+//     {
+//         amount = principal * pow(1.0 + rate, year);
+//         cout << setw(4) << year << setw(21) << amount << endl;
+//     }
+
+//     return 0;
+// }
+
+// ---------------------------------FACTORIAL CALCULATOR------------------------------------
 #include <iostream>
 
-using std::cin;
-using std::cout;
-using std::endl;
+using namespace std;
 
-#include <iomanip>
+int factorial(int value);
 
-using std::setiosflags;
-using std::setprecision;
-using std::setw;
+int main() {
+    int value, result;
+    cout << "Enter your value: ";
+    cin >> value;
 
-#include <cmath>
+    result = factorial(value);
 
-int main()
-{
-    double amount,          // amount on deposit
-        principal = 1000.0, // starting principal
-        rate = .05;         // interest rate
-
-    cout << "Year " << setw(21) << "Amount on deposit" << endl;
-
-    // set floating-point number format
-    cout << setiosflags(std::ios::fixed | std::ios::showpoint) << setprecision(2);
-
-    for (int year = 1; year <= 10; year++)
-    {
-        amount = principal * pow(1.0 + rate, year);
-        cout << setw(4) << year << setw(21) << amount << endl;
-    }
+    cout << result << endl;
 
     return 0;
+}
+
+int factorial (int value) {
+    
 }
