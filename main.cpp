@@ -323,7 +323,6 @@ using std::setprecision;
 using std::setw;
 
 #include <cmath>
-#include <iosfwd>
 
 int main()
 {
@@ -334,7 +333,7 @@ int main()
     cout << "Year " << setw(21) << "Amount on deposit" << endl;
 
     // set floating-point number format
-    cout << setiosflags(ios::fixed | ios::showpoint) << setprecision(2);
+    cout << setiosflags(std::ios::fixed | std::ios::showpoint) << setprecision(2);
 
     for (int year = 1; year <= 10; year++)
     {
