@@ -282,30 +282,64 @@
 // }
 
 // ------------------------------MULTI DIMENSIONAL ARRAY------------------------------
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     string letters[2][2][2] = {
+//         {{"A", "B"},
+//          {"C", "D"}},
+//         {{"E", "F"},
+//          {"G", "H"}}};
+
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             for (int k = 0; k < 2; k++)
+//             {
+//                 cout << letters[i][j][k] << "\n";
+//                 // cout << i << j << k;
+//             }
+//         }
+//     }
+
+//     return 0;
+// }
+
+// ------------------------------------------CALCULATING COMPOUND INTEREST----------------------------
 #include <iostream>
 
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
+
+#include <iomanip>
+
+using std::setiosflags;
+using std::setprecision;
+using std::setw;
+
+#include <cmath>
+#include <iosfwd>
 
 int main()
 {
-    string letters[3][2][2] = {
-        {{"A", "B"},
-         {"C", "D"}},
-        {{"E", "F"},
-         {"G", "H"}},
-        {{"I", "J"},
-         {"K", "L"}}};
+    double amount,          // amount on deposit
+        principal = 1000.0, // starting principal
+        rate = .05;         // interest rate
 
-    for (int i = 0; i < 3; i++)
+    cout << "Year " << setw(21) << "Amount on deposit" << endl;
+
+    // set floating-point number format
+    cout << setiosflags(ios::fixed | ios::showpoint) << setprecision(2);
+
+    for (int year = 1; year <= 10; year++)
     {
-        for (int j = 0; j < 2; j++)
-        {
-            for (int k = 0; k < 2; k++)
-            {
-                cout << letters[i][j][k] << "\n";
-                // cout << i << j << k;
-            }
-        }
+        amount = principal * pow(1.0 + rate, year);
+        cout << setw(4) << year << setw(21) << amount << endl;
     }
 
     return 0;
