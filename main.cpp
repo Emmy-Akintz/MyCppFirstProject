@@ -348,20 +348,35 @@
 
 using namespace std;
 
-int factorial(int value);
+int main()
+{
+    // int number;
 
-int main() {
-    int value, result;
-    cout << "Enter your value: ";
-    cin >> value;
+    // cout << "What factorial do you want to solve: ";
+    // cin >> number;
+    // int number2 = number;
+    // for (int i = 1; i < number; i++)
+    // {
+    //     number2 = number2 - 1;
+    //     number = number * number2;
+    //     if (number2 == 1)
+    //     {
+    //         cout << "The factorial is " << number << ".\n";
+    //     }
+    // }
 
-    result = factorial(value);
-
-    cout << result << endl;
-
-    return 0;
-}
-
-int factorial (int value) {
-    
+    int fail = 0;
+    int pass = 0;
+    for (int i = 1; i <= 10; i++) {
+        int check;
+        cout << "Did this student pass? If yes input 1, If no input 2: ";
+        cin >> check;
+        if (check == 1) {
+            pass++;
+        }
+        if (check == 2) {
+            fail++;
+        }
+    }
+    cout << pass << " passed and " << fail << " failed.";
 }
