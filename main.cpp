@@ -64,38 +64,38 @@
 
 // -------------------------------------POWER FUNCTION--------------------------------------
 
-// #include <iostream>
+#include <iostream>
 
-// using namespace std;
+using namespace std;
 
-// int power(int a, int b);
+int power(int a, int b);
 
-// int main() {
-//     int base, exponent, result;
+int main() {
+    int base, exponent, result;
 
-//     cout << "Enter the base value: ";
-//     cin >> base;
+    cout << "Enter the base value: ";
+    cin >> base;
 
-//     cout << "Enter the exponent value: ";
-//     cin >> exponent;
+    cout << "Enter the exponent value: ";
+    cin >> exponent;
 
-//     result = power(base, exponent);
+    result = power(base, exponent);
 
-//     cout << base << " raised to the power of " << exponent << " is " << result << endl;
+    cout << base << " raised to the power of " << exponent << " is " << result << endl;
 
-//     return 0;
-// }
+    return 0;
+}
 
-// int power(int a, int b) {
-//     if (b == 0) return 1; // Any number to the power of 0 is 1
+int power(int a, int b) {
+    if (b == 0) return 1; // Any number to the power of 0 is 1
 
-//     int result = 1;
-//     for (int i = 1; i <= b; i++) {
-//         result *= a;
-//         // result = result * a;
-//     }
-//     return result;
-// }
+    int result = 1;
+    for (int i = 1; i <= b; i++) {
+        result *= a;
+        // result = result * a;
+    }
+    return result;
+}
 
 // ---------------------------------HYPOTENUSE FUNCTION----------------------------------------
 
