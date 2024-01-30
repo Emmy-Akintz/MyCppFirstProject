@@ -64,38 +64,38 @@
 
 // -------------------------------------POWER FUNCTION--------------------------------------
 
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-int power(int a, int b);
+// int power(int a, int b);
 
-int main() {
-    int base, exponent, result;
+// int main() {
+//     int base, exponent, result;
 
-    cout << "Enter the base value: ";
-    cin >> base;
+//     cout << "Enter the base value: ";
+//     cin >> base;
 
-    cout << "Enter the exponent value: ";
-    cin >> exponent;
+//     cout << "Enter the exponent value: ";
+//     cin >> exponent;
 
-    result = power(base, exponent);
+//     result = power(base, exponent);
 
-    cout << base << " raised to the power of " << exponent << " is " << result << endl;
+//     cout << base << " raised to the power of " << exponent << " is " << result << endl;
 
-    return 0;
-}
+//     return 0;
+// }
 
-int power(int a, int b) {
-    if (b == 0) return 1; // Any number to the power of 0 is 1
+// int power(int a, int b) {
+//     if (b == 0) return 1; // Any number to the power of 0 is 1
 
-    int result = 1;
-    for (int i = 1; i <= b; i++) {
-        result *= a;
-        // result = result * a;
-    }
-    return result;
-}
+//     int result = 1;
+//     for (int i = 1; i <= b; i++) {
+//         result *= a;
+//         // result = result * a;
+//     }
+//     return result;
+// }
 
 // ---------------------------------HYPOTENUSE FUNCTION----------------------------------------
 
@@ -344,39 +344,149 @@ int power(int a, int b) {
 // }
 
 // ---------------------------------FACTORIAL CALCULATOR------------------------------------
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     int number;
+
+//     cout << "What factorial do you want to solve: ";
+//     cin >> number;
+//     int number2 = number;
+//     for (int i = 1; i < number; i++)
+//     {
+//         number2 = number2 - 1;
+//         number = number * number2;
+//         if (number2 == 1)
+//         {
+//             cout << "The factorial is " << number << ".\n";
+//         }
+//     }
+// }
+
+// -------------------------------------FAILED AND PASSED STUDENTS---------------------------------------------------------
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     int fail = 0;
+//     int pass = 0;
+//     for (int i = 1; i <= 10; i++)
+//     {
+//         int check;
+//         cout << "Did this student pass? If yes input 1, If no input 2: ";
+//         cin >> check;
+//         if (check == 1)
+//         {
+//             pass++;
+//         }
+//         if (check == 2)
+//         {
+//             fail++;
+//         }
+//     }
+//     cout << pass << " passed and " << fail << " failed.";
+
+//     return 0;
+// }
+
+//---------------------------------------------CONTROL STRUCTURES(LOOP)------------------------------------------------
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     // initialization, loopContinuationTest, increment/decrement  (statements)
+
+//     // WHILE LOOP
+
+//     // int cocoPops = 1;
+//     // while (cocoPops <= 5)
+//     // {
+//     //     cout << "I just ate coco pops!!!\n";
+//     //     cocoPops++;
+//     // }
+
+//     // DO WHILE LOOP
+
+//     // int cocoPops = 1;
+//     // do
+//     // {
+//     //     cout << cocoPops << "i just ate cocopops" << endl;
+//     //     cocoPops++;
+
+//     // } while (cocoPops <= 7);
+
+//     // int cocoPops = 1;
+//     // do
+//     // {
+//     //     cout << cocoPops << "i just ate cocopops" << endl;
+//     //     cocoPops++;
+
+//     // } while (false);
+
+//     // FOR LOOP
+
+//     // for (int items = 10; items >= 0; items--) {
+//     //     cout << "I just bought the next item. There are " << items << " items left!\n";
+//     // }
+
+//     // int items;
+//     // cout << "How many items are on your list? ";
+//     // cin >> items;
+
+//     // for (items; items >= 0; items--) {
+//     //     cout << "I just bought the next item. There are " << items << " items left!\n";
+//     // }
+
+//     //MULTIPLICATION TABLE
+
+//     // int table, result;
+//     // cout << "What table do you want to get? ";
+//     // cin >> table;
+
+//     // for (int i = 1; i <= 12; i++) {
+//     //     result = table * i;
+//     //     cout << table << " * " << i << " = " << result << endl;
+//     // }
+
+//     // OUTPUT BINARY VALUE FROM 0 TO 7
+
+//     for (int i = 0; i < 2; i++) {
+//         for (int j = 0; j < 2; j++) {
+//             for (int k = 0; k < 2; k++) {
+//                 cout << i << j << k << endl;
+//             }
+//         }
+//     }
+//     return 0;
+// }
+
+//---------------------------------------------PARAMETER PASSING MECHANISMS------------------------------------------------
 #include <iostream>
 
 using namespace std;
 
+int add(int val1, int val2);
+
 int main()
 {
-    // int number;
+    int a, b;
+    cout << "Enter your first value: ";
+    cin >> a;
+    cout << "Enter your second value: ";
+    cin >> b;
+    int result = add(a, b);
+    cout << result;
+    return 0;
+}
 
-    // cout << "What factorial do you want to solve: ";
-    // cin >> number;
-    // int number2 = number;
-    // for (int i = 1; i < number; i++)
-    // {
-    //     number2 = number2 - 1;
-    //     number = number * number2;
-    //     if (number2 == 1)
-    //     {
-    //         cout << "The factorial is " << number << ".\n";
-    //     }
-    // }
-
-    int fail = 0;
-    int pass = 0;
-    for (int i = 1; i <= 10; i++) {
-        int check;
-        cout << "Did this student pass? If yes input 1, If no input 2: ";
-        cin >> check;
-        if (check == 1) {
-            pass++;
-        }
-        if (check == 2) {
-            fail++;
-        }
-    }
-    cout << pass << " passed and " << fail << " failed.";
+int add(int val1, int val2)
+{
+    return val1 + val2;
 }
