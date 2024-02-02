@@ -344,25 +344,25 @@
 // }
 
 // ---------------------------------FACTORIAL CALCULATOR------------------------------------
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-int main()
-{
-    int number, multiplier;
+// int main()
+// {
+//     int number, multiplier;
 
-    cout << "What factorial do you want to solve: ";
-    cin >> number;
-    multiplier = number;
+//     cout << "What factorial do you want to solve: ";
+//     cin >> number;
+//     multiplier = number;
 
-    while (multiplier > 1) {
-        multiplier--;
-        number *= multiplier;
-    }
+//     while (multiplier > 1) {
+//         multiplier--;
+//         number *= multiplier;
+//     }
 
-    cout << "The factorial is " << number;
-}
+//     cout << "The factorial is " << number;
+// }
 
 // -------------------------------------FAILED AND PASSED STUDENTS---------------------------------------------------------
 // #include <iostream>
@@ -488,3 +488,30 @@ int main()
 // {
 //     return val1 + val2;
 // }
+
+// -----------------------------------------------OUTPUT ODD AND EVEN NUMBERS-------------------------------------
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int value;
+
+    cout << "Enter a value: ";
+    cin >> value;
+
+    for (int i = 1; i <= value; i++)
+    {
+        if (i % 2)
+        {
+            cout << "Odd: " << i << endl;
+        }
+        else
+        {
+            cout << "Even: " << i << endl;
+        }
+    }
+
+    return 0;
+}
