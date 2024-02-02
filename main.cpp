@@ -344,27 +344,25 @@
 // }
 
 // ---------------------------------FACTORIAL CALCULATOR------------------------------------
-// #include <iostream>
+#include <iostream>
 
-// using namespace std;
+using namespace std;
 
-// int main()
-// {
-//     int number;
+int main()
+{
+    int number, multiplier;
 
-//     cout << "What factorial do you want to solve: ";
-//     cin >> number;
-//     int number2 = number;
-//     for (int i = 1; i < number; i++)
-//     {
-//         number2 = number2 - 1;
-//         number = number * number2;
-//         if (number2 == 1)
-//         {
-//             cout << "The factorial is " << number << ".\n";
-//         }
-//     }
-// }
+    cout << "What factorial do you want to solve: ";
+    cin >> number;
+    multiplier = number;
+
+    while (multiplier > 1) {
+        multiplier--;
+        number *= multiplier;
+    }
+
+    cout << "The factorial is " << number;
+}
 
 // -------------------------------------FAILED AND PASSED STUDENTS---------------------------------------------------------
 // #include <iostream>
@@ -468,25 +466,25 @@
 // }
 
 //---------------------------------------------PARAMETER PASSING MECHANISMS------------------------------------------------
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-int add(int val1, int val2);
+// int add(int val1, int val2);
 
-int main()
-{
-    int a, b;
-    cout << "Enter your first value: ";
-    cin >> a;
-    cout << "Enter your second value: ";
-    cin >> b;
-    int result = add(a, b);
-    cout << result;
-    return 0;
-}
+// int main()
+// {
+//     int a, b;
+//     cout << "Enter your first value: ";
+//     cin >> a;
+//     cout << "Enter your second value: ";
+//     cin >> b;
+//     int result = add(a, b);
+//     cout << result;
+//     return 0;
+// }
 
-int add(int val1, int val2)
-{
-    return val1 + val2;
-}
+// int add(int val1, int val2)
+// {
+//     return val1 + val2;
+// }
