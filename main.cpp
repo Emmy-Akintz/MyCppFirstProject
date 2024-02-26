@@ -160,41 +160,41 @@
 // }
 
 // -----------------------------------IFLYQUEEN CLASS------------------------------------------
-// #include <iostream>
+#include <iostream>
 
-// using namespace std;
+using namespace std;
 
-// int main()
-// {
-//     // LOOPS
-//     // initialization statement
-//     // loopContinuation statement
-//     // increment/decrement statement
+int main()
+{
+    // LOOPS
+    // initialization statement
+    // loopContinuation statement
+    // increment/decrement statement
 
-//     // FOR LOOP
-//     for (int ify = 0; ify < 10; ify++)
-//     {
-//         cout << "\ninitial " << ify;
-//     }
+    // FOR LOOP
+    for (int ify = 0; ify < 10; ify++)
+    {
+        cout << "\ninitial " << ify;
+    }
 
-//     // WHILE LOOP
-//     int i2 = 0;
-//     while (i2 < 10)
-//     {
-//         cout << "\nshe's a good girl I guess " << i2;
-//         i2++;
-//     }
+    // WHILE LOOP
+    int i2 = 0;
+    while (i2 < 10)
+    {
+        cout << "\nshe's a good girl I guess " << i2;
+        i2++;
+    }
 
-//     // DO WHILE LOOP
-//     int IFLYQUEEN = 1;
-//     do
-//     {
-//         cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
-//         // IFLYQUEEN++;
-//     } while (IFLYQUEEN++ <= 10);
+    // DO WHILE LOOP
+    int IFLYQUEEN = 1;
+    do
+    {
+        cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
+        // IFLYQUEEN++;
+    } while (IFLYQUEEN++ <= 10);
 
-//     return 0;
-// }
+    return 0;
+}
 
 // ----------------------------------CLASS AVERAGE------------------------------------
 
@@ -573,35 +573,35 @@
 // }
 
 // ------------------------- A CODE TO OUTPUT A RANGE OF PERFECT NUMBERS --------------------
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main()
-{
-    int numberLimit;
-    cout << "Enter a number: ";
-    cin >> numberLimit;
+// int main()
+// {
+//     int numberLimit;
+//     cout << "Enter a number: ";
+//     cin >> numberLimit;
 
-    while (numberLimit > 0)
-    {
-        int total = 0;
-        for (int i = 1; i < numberLimit; i++)
-        {
-            if (numberLimit % i)
-            {
-                continue;
-            }
-            else
-            {
-                total += i;
-            }
-        }
-        if ((total == numberLimit))
-        {
-            cout << numberLimit << " is a perfect number\n";
-        }
-        numberLimit--;
-    }
+//     while (numberLimit > 0)
+//     {
+//         int total = 0;
+//         for (int i = 1; i < numberLimit; i++)
+//         {
+//             if (numberLimit % i)
+//             {
+//                 continue;
+//             }
+//             else
+//             {
+//                 total += i;
+//             }
+//         }
+//         if ((total == numberLimit))
+//         {
+//             cout << numberLimit << " is a perfect number\n";
+//         }
+//         numberLimit--;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
