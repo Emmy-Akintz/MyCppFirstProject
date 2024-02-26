@@ -490,48 +490,48 @@
 // }
 
 // -----------------------------------------------OUTPUT ODD AND EVEN NUMBERS-------------------------------------
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    int value;
-
-    cout << "Enter a value: ";
-    cin >> value;
-
-    for (int i = 1; i <= value; i++)
-    {
-        if (i % 2)
-        {
-            cout << "Odd: " << i << endl;
-        }
-        else
-        {
-            cout << "Even: " << i << endl;
-        }
-    }
-
-    return 0;
-}
-
-// --------------------------------------------------A CODE TO ACCEPT ONLY INTEGER NUMBERS---------------------------------------------
 // #include <iostream>
-// #include <limits>
 
 // using namespace std;
 
-// int main () {
-//     int number;
-//     cout << "Enter an integer: ";
-    
-//     while (!(cin >> number)) {
-//         cout << "Invalid input. Please enter an integer: ";
-//         cin.clear();
-//         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+// int main()
+// {
+//     int value;
+
+//     cout << "Enter a value: ";
+//     cin >> value;
+
+//     for (int i = 1; i <= value; i++)
+//     {
+//         if (i % 2)
+//         {
+//             cout << "Odd: " << i << endl;
+//         }
+//         else
+//         {
+//             cout << "Even: " << i << endl;
+//         }
 //     }
 
-//     cout << "You entered: " << number << endl;
 //     return 0;
 // }
+
+// --------------------------------------------------A CODE TO ACCEPT ONLY INTEGER NUMBERS---------------------------------------------
+#include <iostream>
+#include <limits>
+
+using namespace std;
+
+int main () {
+    int number;
+    cout << "Enter an integer: ";
+    
+    while (!(cin >> number)) {
+        cout << "Invalid input. Please enter an integer: ";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
+
+    cout << "You entered: " << number << endl;
+    return 0;
+}
