@@ -160,41 +160,41 @@
 // }
 
 // -----------------------------------IFLYQUEEN CLASS------------------------------------------
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-int main()
-{
-    // LOOPS
-    // initialization statement
-    // loopContinuation statement
-    // increment/decrement statement
+// int main()
+// {
+//     // LOOPS
+//     // initialization statement
+//     // loopContinuation statement
+//     // increment/decrement statement
 
-    // FOR LOOP
-    for (int ify = 0; ify < 10; ify++)
-    {
-        cout << "\ninitial " << ify;
-    }
+//     // FOR LOOP
+//     // for (int ify = 0; ify < 10; ify++)
+//     // {
+//     //     cout << "\ninitial " << ify;
+//     // }
 
-    // WHILE LOOP
-    int i2 = 0;
-    while (i2 < 10)
-    {
-        cout << "\nshe's a good girl I guess " << i2;
-        i2++;
-    }
+//     // WHILE LOOP
+//     int i2 = 1;
+//     while (i2 <= 10)
+//     {
+//         cout << "\nthis is my " << i2 << " step(s)";
+//         i2++;
+//     }
 
-    // DO WHILE LOOP
-    int IFLYQUEEN = 1;
-    do
-    {
-        cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
-        // IFLYQUEEN++;
-    } while (IFLYQUEEN++ <= 10);
+//     // DO WHILE LOOP
+//     // int IFLYQUEEN = 1;
+//     // do
+//     // {
+//     //     cout << "\n2. she's a good girl I guess " << IFLYQUEEN;
+//     //     // IFLYQUEEN++;
+//     // } while (IFLYQUEEN++ <= 10);
 
-    return 0;
-}
+//     return 0;
+// }
 
 // ----------------------------------CLASS AVERAGE------------------------------------
 
@@ -605,3 +605,33 @@ int main()
 
 //     return 0;
 // }
+
+// --------------------------- AREA OF ANNULUS -----------------------------------
+#include <iostream>
+
+using namespace std;
+float annulus(float a, float b);
+
+int main()
+{
+    float inner, outer, result;
+    cout << "Enter the inner radius: ";
+    cin >> inner;
+    cout << "Enter the outer radius: ";
+    cin >> outer;
+    
+    result = annulus(outer, inner);
+    cout << "The area is " << result << endl;
+
+    return 0;
+}
+
+float annulus(float a, float b)
+{
+    float R, r, result;
+    float pi = 3.142;
+    R = a * a;
+    r = b * b;
+    result = pi * (R + r);
+    return result;
+}
