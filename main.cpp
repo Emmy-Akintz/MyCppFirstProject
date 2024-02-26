@@ -536,34 +536,37 @@
 //     return 0;
 // }
 
-// ---------------------------- A CODE TO FIND PERFECT NUMBER --------------------
+// ---------------------------- CHECK FOR PERFECT NUMBER --------------------
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int number;
+    int number, total;
+    total = 0;
     cout << "Enter a number: ";
     cin >> number;
 
-    switch (number)
+    for (int i = 1; i < number; i++)
     {
-    case 1:
-        cout << "take cloth from first wardrobe";
-        break;
-    case 2:
-        cout << "take cloth from 2nd wardrobe";
-        break;
-    case 3:
-        cout << "take cloth from 3rd wardrobe";
-        break;
-    case 4:
-        cout << "take cloth from 4th wardrobe";
-        break;
-    default:
-        cout << "wardrobe does not exist! run the code again!!!";
-        break;
+        if (number % i)
+        {
+            continue;
+        }
+        else
+        {
+            total += i;
+        }
+    }
+
+    if ((total == number))
+    {
+        cout << "It is a perfect number!\n";
+    }
+    else
+    {
+        cout << "It is not a perfect number!\n";
     }
 
     return 0;
