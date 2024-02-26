@@ -607,31 +607,57 @@
 // }
 
 // --------------------------- AREA OF ANNULUS -----------------------------------
+// #include <iostream>
+
+// using namespace std;
+// float annulus(float a, float b);
+
+// int main()
+// {
+//     float inner, outer, result;
+//     cout << "Enter the inner radius: ";
+//     cin >> inner;
+//     cout << "Enter the outer radius: ";
+//     cin >> outer;
+    
+//     result = annulus(outer, inner);
+//     cout << "The area is " << result << endl;
+
+//     return 0;
+// }
+
+// float annulus(float a, float b)
+// {
+//     float R, r, result;
+//     float pi = 3.142;
+//     R = a * a;
+//     r = b * b;
+//     result = pi * (R + r);
+//     return result;
+// }
+
+// ---------------------- SWITCH CASE ---------------------------------------
 #include <iostream>
 
 using namespace std;
-float annulus(float a, float b);
 
-int main()
-{
-    float inner, outer, result;
-    cout << "Enter the inner radius: ";
-    cin >> inner;
-    cout << "Enter the outer radius: ";
-    cin >> outer;
+int main () {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
     
-    result = annulus(outer, inner);
-    cout << "The area is " << result << endl;
+    switch (number)
+    {
+    case 1:
+        cout << "first";
+        break;
+    case 2:
+        cout << "second";
+        break;
+    default:
+        cout << "wrong! try again!";
+        break;
+    }
 
     return 0;
-}
-
-float annulus(float a, float b)
-{
-    float R, r, result;
-    float pi = 3.142;
-    R = a * a;
-    r = b * b;
-    result = pi * (R + r);
-    return result;
 }
