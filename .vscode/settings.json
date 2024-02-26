@@ -68,5 +68,8 @@
     "type_traits": "cpp",
     "utility": "cpp",
     "limits": "cpp"
-  }
+  },
+  "cSpell.words": [
+    "cocopops"
+  ]
 }

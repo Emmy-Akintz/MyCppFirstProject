@@ -536,7 +536,7 @@
 //     return 0;
 // }
 
-// ---------------------------- CHECK FOR PERFECT NUMBER --------------------
+// ---------------------------- CHECKS IF NUMBER IS A PERFECT NUMBER --------------------
 // #include <iostream>
 
 // using namespace std;
@@ -574,7 +574,6 @@
 
 // ------------------------- A CODE TO OUTPUT A RANGE OF PERFECT NUMBERS --------------------
 #include <iostream>
-
 using namespace std;
 
 int main()
