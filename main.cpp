@@ -537,36 +537,71 @@
 // }
 
 // ---------------------------- CHECK FOR PERFECT NUMBER --------------------
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     int number, total;
+//     total = 0;
+//     cout << "Enter a number: ";
+//     cin >> number;
+
+//     for (int i = 1; i < number; i++)
+//     {
+//         if (number % i)
+//         {
+//             continue;
+//         }
+//         else
+//         {
+//             total += i;
+//         }
+//     }
+
+//     if ((total == number))
+//     {
+//         cout << "It is a perfect number!\n";
+//     }
+//     else
+//     {
+//         cout << "It is not a perfect number!\n";
+//     }
+
+//     return 0;
+// }
+
+// ------------------------- A CODE TO OUTPUT A RANGE OF PERFECT NUMBERS --------------------
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int number, total;
-    total = 0;
+    int numberLimit;
     cout << "Enter a number: ";
-    cin >> number;
+    cin >> numberLimit;
 
-    for (int i = 1; i < number; i++)
+    while (numberLimit > 0)
     {
-        if (number % i)
+        int total = 0;
+        for (int i = 1; i < numberLimit; i++)
         {
-            continue;
+            if (numberLimit % i)
+            {
+                continue;
+            }
+            else
+            {
+                total += i;
+            }
         }
-        else
+        if ((total == numberLimit))
         {
-            total += i;
+            cout << numberLimit << " is a perfect number\n";
         }
-    }
-
-    if ((total == number))
-    {
-        cout << "It is a perfect number!\n";
-    }
-    else
-    {
-        cout << "It is not a perfect number!\n";
+        numberLimit--;
     }
 
     return 0;
