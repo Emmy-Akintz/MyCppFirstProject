@@ -361,10 +361,10 @@
 //         number *= multiplier;
 //     }
 
-//     cout << "The factorial is " << number;
+//     cout << "The factorial is " << number << endl;
 // }
 
-// -------------------------------------FAILED AND PASSED STUDENTS---------------------------------------------------------
+// ------------------------------------- FAILED AND PASSED STUDENTS -------------------------------------
 // #include <iostream>
 
 // using namespace std;
@@ -517,21 +517,54 @@
 // }
 
 // --------------------------------------------------A CODE TO ACCEPT ONLY INTEGER NUMBERS---------------------------------------------
+// #include <iostream>
+// #include <limits>
+
+// using namespace std;
+
+// int main () {
+//     int number;
+//     cout << "Enter an integer: ";
+
+//     while (!(cin >> number)) {
+//         cout << "Invalid input. Please enter an integer: ";
+//         cin.clear();
+//         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//     }
+
+//     cout << "You entered: " << number << endl;
+//     return 0;
+// }
+
+// ---------------------------- A CODE TO FIND PERFECT NUMBER --------------------
 #include <iostream>
-#include <limits>
 
 using namespace std;
 
-int main () {
+int main()
+{
     int number;
-    cout << "Enter an integer: ";
-    
-    while (!(cin >> number)) {
-        cout << "Invalid input. Please enter an integer: ";
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cout << "Enter a number: ";
+    cin >> number;
+
+    switch (number)
+    {
+    case 1:
+        cout << "take cloth from first wardrobe";
+        break;
+    case 2:
+        cout << "take cloth from 2nd wardrobe";
+        break;
+    case 3:
+        cout << "take cloth from 3rd wardrobe";
+        break;
+    case 4:
+        cout << "take cloth from 4th wardrobe";
+        break;
+    default:
+        cout << "wardrobe does not exist! run the code again!!!";
+        break;
     }
 
-    cout << "You entered: " << number << endl;
     return 0;
 }
