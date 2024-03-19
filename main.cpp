@@ -661,4 +661,3 @@ double hypotenuse(double b, double c) {
 
 //     return 0;
 // }
-
