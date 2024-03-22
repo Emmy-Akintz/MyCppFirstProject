@@ -99,65 +99,65 @@
 
 // ---------------------------------HYPOTENUSE FUNCTION----------------------------------------
 
-#include <iostream>
-#include <cmath> // Use cmath instead of math.h for C++
-
-using namespace std;
-
-double hypotenuse(double b, double c);
-
-int main() {
-double b, c, result;
-
-    cout << "Enter the value for one side of your triangle: ";
-    cin >> b;
-
-    cout << "Enter the value for the other side: ";
-    cin >> c;
-
-    result = hypotenuse(b, c);
-
-    cout << "The hypotenuse for a triangle with sides " << b << " and " << c << " is " << result << "." << endl;
-
-    return 0;
-}
-
-double hypotenuse(double b, double c) {
-    double result = sqrt((b * b) + (c * c));
-    return result;
-}
-
-// -----------------------------------ABSOLUTE FUNCTION---------------------------------------
-
 // #include <iostream>
-// #include <cmath> // Use cmath for math functions
+// #include <cmath> // Use cmath instead of math.h for C++
 
 // using namespace std;
 
-// int absolute(int x);
+// double hypotenuse(double b, double c);
 
 // int main() {
-//     int value, result;
+// double b, c, result;
 
-//     cout << "Enter the value: ";
-//     cin >> value;
+//     cout << "Enter the value for one side of your triangle: ";
+//     cin >> b;
 
-//     result = absolute(value);
+//     cout << "Enter the value for the other side: ";
+//     cin >> c;
 
-//     cout << "The absolute value of " << value << " is " << result << "." << endl;
+//     result = hypotenuse(b, c);
+
+//     cout << "The hypotenuse for a triangle with sides " << b << " and " << c << " is " << result << "." << endl;
 
 //     return 0;
 // }
 
-// int absolute(int x) {
-//     double result;
-//     // Square the value
-//     result = pow(x, 2);
-//     // Take the square root of the squared value
-//     result = sqrt(result);
-//     // Return the absolute value
-//     return static_cast<int>(result);
+// double hypotenuse(double b, double c) {
+//     double result = sqrt((b * b) + (c * c));
+//     return result;
 // }
+
+// -----------------------------------ABSOLUTE FUNCTION---------------------------------------
+
+#include <iostream>
+#include <cmath> // Use cmath for math functions
+
+using namespace std;
+
+int absolute(int x);
+
+int main() {
+    int value, result;
+
+    cout << "Enter the value: ";
+    cin >> value;
+
+    result = absolute(value);
+
+    cout << "The absolute value of " << value << " is " << result << "." << endl;
+
+    return 0;
+}
+
+int absolute(int x) {
+    double result;
+    // Square the value
+    result = pow(x, 2);
+    // Take the square root of the squared value
+    result = sqrt(result);
+    // Return the absolute value
+    return static_cast<int>(result);
+}
 
 // -----------------------------------IFLYQUEEN CLASS------------------------------------------
 // #include <iostream>
