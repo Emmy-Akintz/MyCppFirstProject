@@ -129,35 +129,35 @@
 
 // -----------------------------------ABSOLUTE FUNCTION---------------------------------------
 
-// #include <iostream>
-// #include <cmath> // Use cmath for math functions
+#include <iostream>
+#include <cmath> // Use cmath for math functions
 
-// using namespace std;
+using namespace std;
 
-// int absolute(int x);
+int absolute(int x);
 
-// int main() {
-//     int value, result;
+int main() {
+    int value, result;
 
-//     cout << "Enter the value: ";
-//     cin >> value;
+    cout << "Enter the value: ";
+    cin >> value;
 
-//     result = absolute(value);
+    result = absolute(value);
 
-//     cout << "The absolute value of " << value << " is " << result << "." << endl;
+    cout << "The absolute value of " << value << " is " << result << "." << endl;
 
-//     return 0;
-// }
+    return 0;
+}
 
-// int absolute(int x) {
-//     double result;
-//     // Square the value
-//     result = pow(x, 2);
-//     // Take the square root of the squared value
-//     result = sqrt(result);
-//     // Return the absolute value
-//     return static_cast<int>(result);
-// }
+int absolute(int x) {
+    double result;
+    // Square the value
+    result = pow(x, 2);
+    // Take the square root of the squared value
+    result = sqrt(result);
+    // Return the absolute value
+    return static_cast<int>(result);
+}
 
 // -----------------------------------IFLYQUEEN CLASS------------------------------------------
 // #include <iostream>
